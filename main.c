@@ -121,7 +121,6 @@ void processCreatures() {
 	int newPos[2];
 	Creature *movedCreature;
 	for (int i = 0; i < totalOrgs; i++) {
-
 		if (living[i]->lv == 0) {
 			continue;
 		}
@@ -149,7 +148,7 @@ void display() {
 	Sleep(gameSpeed);
 	system("cls");
 
-	for (int i = 0; i <= boardDims[0]; i++) {
+	for (int i = 0; i < boardDims[0]; i++) {
 		for (int x = 0; x < boardDims[1]; x++) {
 
 			if (x % boardDims[1] == 0) {
